@@ -1,27 +1,43 @@
 <!-- Basic EDI System by Carl Mesias -->
 
-<!-- Customer Frontend Website -->
+<!-- Frontend Customer Login Website -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RPLI Customer Login Portal</title>
+    <title>RPLI Customer Portal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 <body>
     <!-- EDI System Company name is RPLI -->
-    <h1>RPLI Customer Portal</h1>
+    <h1>RPLI CUSTOMER LOGIN PORTAL</h1>
     <p>RLPI is an EDI system that streamlines your business's needs. </p>
 
     <!-- Customer Login -->
-    <h2>CUSTOMER LOGIN</h2>
+    <h2>Customer Login</h2>
     <form>
-        Email<div><input id="email" type="text" placeholder="Type your email"></div>
-        Password<div><input id="password" type="text" placeholder="Type your password"></div>
-        <div><a href="#">Forgot password?</a></div>
-        <div><button type="submit">LOGIN</button></div>
+        <!-- Email -->
+        <label for="email">Email</label>
+        <div>
+            <!-- Max Length for emails -->
+            <input type="email" id="email" name="email" placeholder="Type your email" maxlength="64" required>
+
+            <!-- Max Length for email domains -->
+            <label for="email-domain">@</label>
+            <input type="email-domain" id="email-domain" name="email-domain" placeholder="gmail" maxlength="255" required>.com
+        </div>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <div><input type="password" id="password" name="password" placeholder="Type your password" minlength="14" required></div>
+        
+        <!-- Button -->
+        <button type="submit" id="login-btn">LOGIN</button>
+
+        <!-- Signup suggestion -->
         <p>Or Sign Up Using</p>
         <div><a href="signup.html">SIGN UP</a></div>
     </form>

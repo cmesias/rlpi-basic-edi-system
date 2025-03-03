@@ -3,9 +3,31 @@
 ### Frontend ###
 - https://meyerweb.com/eric/tools/css/reset/
 
+# paswords and email lengths
+- https://tuta.com/blog/minimum-password-length
+
+# for requests
+- Axios: https://axios-http.com/docs/intro
+
 ### Backend ###
-# FastAPI
+# supabase auth
+- https://supabase.com/docs/reference/javascript/auth-signup
+
+# Express (JavaScript)
+- https://expressjs.com/
+
+# FastAPI (Python)
 - https://fastapi.tiangolo.com/tutorial/first-steps/s
 
 # dotenv
 - https://pypi.org/project/python-dotenv/s
+
+# Server end-points
+- https://loadforge.com/guides/creating-your-first-endpoint-with-fastapi
+
+### Learning ###
+Cookies: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
+
+
+# Notes
+- ASGI Server: An ASGI server is a web server that uses the Asynchronous Server Gateway Interface (ASGI) specification to communicate with Python applications and frameworks. ASGI is designed to handle many simultaneous connections with low latency. 

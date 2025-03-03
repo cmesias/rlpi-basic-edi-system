@@ -1,6 +1,6 @@
 <!-- Basic EDI System by Carl Mesias -->
 
-<!-- Customer Frontend Website -->
+<!-- Frontend Customer Signup Website -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,24 +9,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPLI Customer Portal</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+
 </head>
 <body>
     <!-- EDI System Company name is RPLI -->
-    <h1>RPLI Customer Register Portal</h1>
+    <h1>RPLI CUSTOMER REGISTER PORAL</h1>
     <p>RLPI is an EDI system that streamlines your business's needs. </p>
 
     <!-- Customer Regsiter -->
-    <h2>CUSTOMER REGISTER</h2>
-    <form>
-        Email<div><input id="email" type="text" placeholder="Type your email"></div>
-        Password<div><input id="password" type="text" placeholder="Type your password"></div>
-        Password<div><input id="password2" type="text" placeholder="Type your password again"></div>
-        <div><button type="submit">REGISTER</button></div>
+    <h2>Customer Register</h2>
+    <form id="register-form">
+        <!-- Email -->
+        <label for="email">Email</label>
+        <div>
+            <!-- Max Length for emails -->
+            <input type="email" id="email" name="email" placeholder="Type your email" maxlength="350" required>
+
+            <!-- Max Length for email domains -->
+            <!-- <label for="email-domain">@</label> -->
+            <!-- <input type="email-domain" id="email-domain" name="email-domain" placeholder="gmail" maxlength="255" required>.com -->
+        </div>
+
+        <!-- Password -->
+        <label for="password">Password</label>
+        <div><input type="password" id="password" name="password" placeholder="Type your password" minlength="14" required></div>
+
+        <!-- Confirm Password -->
+        <label for="confirmPassword">Confirm Password</label>
+        <div><input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" minlength="14" required></div>
+        
+        <!-- Button -->
+        <button type="submit" id="register-btn">REGISTER</button>
+
+        <!-- Login suggestion -->
         <p>Already have an account?</p>
         <div><a href="index.html">LOG IN</a></div>
     </form>
-    
-    <script src="app.js"></script>
+    <script src="app.js" type="module"></script>
 </body>
 </html>
 
