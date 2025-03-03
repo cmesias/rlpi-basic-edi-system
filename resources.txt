@@ -1,5 +1,9 @@
 
 
+### Frontend ###
+- https://meyerweb.com/eric/tools/css/reset/
+
+### Backend ###
 # FastAPI
 - https://fastapi.tiangolo.com/tutorial/first-steps/s
 
