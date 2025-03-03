@@ -1,0 +1,7 @@
+
+
+# FastAPI
+- https://fastapi.tiangolo.com/tutorial/first-steps/s
+
+# dotenv
+- https://pypi.org/project/python-dotenv/s
